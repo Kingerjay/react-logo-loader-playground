@@ -25,7 +25,7 @@ export function ControlPanel({ config, onChange }: ControlPanelProps) {
       <LogoInput
         svgCode={config.svgCode}
         logoFileName={config.logoFileName}
-        onChange={(svg, fileName, dataUrl, suggestedColor) =>
+        onChange={(svg: string, fileName?: string | null, dataUrl?: string | null, suggestedColor?: string) =>
           onChange({
             svgCode: svg,
             logoFileName: fileName ?? "",
