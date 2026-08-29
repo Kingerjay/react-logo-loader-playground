@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/layout/ThemeProvider";
 import { Navbar } from "@/components/layout/Navbar";
 import { PageLoader } from "@/components/layout/PageLoader";
 import { Suspense } from "react";
+import { Analytics } from "@vercel/analytics/next"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -60,6 +61,7 @@ export default function RootLayout({
               {children}
             </Suspense>
           </main>
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
