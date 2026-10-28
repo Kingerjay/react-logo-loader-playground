@@ -46,7 +46,7 @@ export default function HomePage() {
           }}
         >
           A customizable React loader library with 20+ animated styles.
-          Pass your SVG logo and go live in minutes.
+          Pass your Brand logo and go live in minutes.
         </p>
           
         {/* CTAs */}
